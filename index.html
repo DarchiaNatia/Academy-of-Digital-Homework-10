@@ -11,53 +11,95 @@
 </head>
 <body>
     <h1>Form Validations:</h1>
-    <form class="registration-form" id="registrationForm" action="" method="post">
-        <div class="fName-div">
-            <label class="input-labeles" for="fName">First Name:</label>
-            <input class="inputs" type="text" name="fName" id="fName" placeholder="Enter your first name...">
-            <span class="error-text" id="error_fName"></span>
-        </div>
-
-        <div class="LName-div">
-            <label class="input-labeles" for="LName">Last Name:</label>
-            <input class="inputs" type="text" name="LName" id="LName" placeholder="Enter your last name...">
-            <span class="error-text" id="error_lName"></span>
-        </div>
-
-        <div class="password-div">
-            <label class="input-labeles" for="password">Password:</label>
-            <input class="inputs" type="password" name="password" id="password" placeholder="Enter your password...">
-            <div class="showPassword-div">
-                <i class="fa-solid fa-eye" id="hideShowPass"></i>
-                <span class="show-password-text">Show Password</span>
+    <section>
+        <form class="registration-form" id="registrationForm" action="" method="post">
+            <div class="fName-div">
+                <label class="input-labeles" for="fName">First Name:</label>
+                <input class="inputs" type="text" name="fName" id="fName" placeholder="Enter your first name...">
+                <span class="error-text" id="error_fName"></span>
             </div>
-        </div>
+    
+            <div class="LName-div">
+                <label class="input-labeles" for="LName">Last Name:</label>
+                <input class="inputs" type="text" name="LName" id="LName" placeholder="Enter your last name...">
+                <span class="error-text" id="error_lName"></span>
+            </div>
+    
+            <div class="password-div">
+                <label class="input-labeles" for="password">Password:</label>
+                <input class="inputs" type="password" name="password" id="password" placeholder="Enter your password...">
+                <span class="error-text" id="error_password"></span>
+                <div class="showPassword-div">
+                    <i class="fa-solid fa-eye" id="hideShowPass"></i>
+                    <span class="show-password-text">Show Password</span>
+                </div>
+            </div>
+    
+            <div class="repeat-password-div">
+                <label class="input-labeles" for="repeat-password">Repeat Password:</label>
+                <input class="inputs" type="password" name="repeat_password" id="repeat-password" placeholder="Please, repeat your password...">
+                <span class="error-text" id="error_repeat_password"></span>
+            </div>
+    
+            <div class="radio-buttons">
+                <input type="radio" name="gender" id="female">
+                <label class="input-labeles" for="female">Female</label>
+                <input type="radio" name="gender" id="male">
+                <label class="input-labeles" for="male">Male</label>
+                <span class="error-text" id="error_gender"></span>
+            </div>
+    
+            <div class="check-box">
+                <input type="checkbox" name="agree" id="agree">
+                <label class="input-labeles" for="agree">I agree terms and conditions.</label>
+                <span class="error-text" id="error_agree"></span>
+            </div>
+    
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </section>
 
-        <div class="repeat-password-div">
-            <label class="input-labeles" for="repeat-password">Repeat Password:</label>
-            <input class="inputs" type="password" name="repeat_password" id="repeat-password" placeholder="Please, repeat your password...">
-            <span class="error-text" id="error_repeat_password"></span>
-        </div>
+    <section class="section-2">
+        <form class="registration-form-2" id="registration_form" action="">
+            <div class="inputs-wrapper-div">
+                <input class="registration-inputs" type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+            </div>
 
-        <div class="radio-buttons">
-            <input type="radio" name="gender" id="female">
-            <label class="input-labeles" for="female">Female</label>
-            <input type="radio" name="gender" id="male">
-            <label class="input-labeles" for="male">Male</label>
-            <span class="error-text" id="error_gender"></span>
-        </div>
+            <div class="inputs-wrapper-div">
+                <input class="registration-inputs" type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+            </div>
 
-        <div class="check-box">
-            <input type="checkbox" name="agree" id="agree">
-            <label class="input-labeles" for="agree">I agree terms and conditions.</label>
-            <span class="error-text" id="error_agree"></span>
-        </div>
+            <div class="inputs-wrapper-div">
+                <input class="registration-inputs" type="password" name="password2" id="password2" placeholder="Enter password">
+            </div>
 
-        <button class="submit-button" type="submit">Submit</button>
+            <div class="inputs-wrapper-div">
+                <input class="registration-inputs" type="password" name="password2_repeat" id="password2_repeat" placeholder="Please, repeat your password">
+            </div>
+
+            <div>
+                <input type="radio" name="gender-input" id="genderFemale">
+                <label class="input-labeles" for="genderFemale">Female</label>
+                <input type="radio" name="gender-input" id="genderMale">
+                <label class="input-labeles" for="genderMale">Male</label>
+            </div>
+
+            <div class="check-box">
+                <input type="checkbox" name="check" id="check">
+                <label class="input-labeles" for="check">I agree with terms and conditions</label>
+            </div>
+
+            <button class="submit-btn" type="submit">Submit</button>
 
 
 
-    </form>
+
+
+
+        </form>
+
+    </section>
+    
     
     <script src="script.js"></script>
 </body>

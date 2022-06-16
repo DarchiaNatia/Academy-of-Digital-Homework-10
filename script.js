@@ -7,23 +7,36 @@ let hideShowPassIcon = document.getElementById('hideShowPass');
 registrationForm.addEventListener('submit', function(event) {
     event.preventDefault();
     let errors = {};
+    let regExp = /[a-zA-Z]/g;
     let registration_form = event.target;
 
     let firstName = document.getElementById('fName').value;
     if(firstName == "") {
         errors.fName = 'First name can not be empty'
     }
+    else if (firstName.length < 6 || !regExp.test(firstName)) {
+        errors.fName = 'Name must contain at least 6 characters and should contain letters'
+    }
 
     let lastName = document.getElementById('LName').value;
     if(lastName == "") {
         errors.lName = 'Last name can not be empty'
     }
+    else if (lastName.length < 6 || !regExp.test(lastName)) {
+        errors.lName = 'Last name must contain at least 6 characters and should contain letters'
+    }
 
     let password = document.getElementById('password').value;
     let repeatPassword = document.getElementById('repeat-password').value;
 
-    if(password != repeatPassword || password == '') {
-        errors.repeat_password = 'Passwords do not match and enter your password';
+    if(password == "") {
+        errors.password = 'Please, enter your password!'
+    }
+    else if (password.length < 8) {
+        errors.password = 'Password should contain at least 8 characters'
+    }
+    else if(password != repeatPassword) {
+        errors.repeat_password = 'Passwords do not match';
     }
 
     let gender = false;
@@ -71,3 +84,4 @@ function hideShowPassword () {
 }
 hideShowPassIcon.addEventListener('click', hideShowPassword)
 
+// Second registration form

@@ -70,3 +70,39 @@ h1 {
     font-style: italic;
     display: block;
 }
+
+/* start section #2 */
+.section-2 {
+    margin-top: 100px;
+    padding: 20px;
+}
+.registration-form-2 {
+    width: 40%;
+    height: auto;
+    margin: 100px auto;
+}
+.inputs-wrapper-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.registration-inputs {
+    width: 100%;
+    height: 60px;
+    border: solid 2px rgb(165, 48, 155);
+}
+.submit-btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: rgb(165, 48, 155);
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 30px;
+}
+.submit-btn:hover {
+    background: none;
+    border: solid 2px rgb(165, 48, 155);
+    color: rgb(70, 63, 63);
+}
